@@ -28,12 +28,4 @@ public class Util {
       }
         return connection;
     }
-    public void closeConnection(Connection connection) {
-        try {
-            connection.close();
-            System.out.println("соединение закрыто");
-        } catch (SQLException e) {
-            System.err.println("не удалось закрыть соединение");
-        }
-    }
 }
