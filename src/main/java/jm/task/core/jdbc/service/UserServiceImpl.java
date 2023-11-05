@@ -6,10 +6,6 @@ import jm.task.core.jdbc.model.User;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    //2. UserServiceImpl - внутри класса создаём экземпляр UserDaoJDBCImpl
-    // (дальше сообразите что делать, идея поможет)))
-    //service переиспользует методы dao
-    //Все поля должны быть private
     private final UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
 
     public void createUsersTable() {

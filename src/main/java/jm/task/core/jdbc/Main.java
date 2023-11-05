@@ -22,10 +22,9 @@ public class Main {
         userService.saveUser(testName, testLastName, testAge);
         userService.saveUser(testName, testLastName, testAge);
 
-        //userService.removeUserById(3);
+        userService.removeUserById(3);
 
-        List<User> userList = userService.getAllUsers();
-        System.out.println(userList);
+        System.out.println(userService.getAllUsers());
 
         userService.cleanUsersTable();
 
